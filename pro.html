@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECTS</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: sans-serif;
+            background: url(flobb.jpg) no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        .project-explanation {
+            background: rgba(255, 255, 255, 0.7);
+            color: black;
+            padding: 20px;
+            text-align: justify; /* Justify text for even spacing */
+            line-height: 1.5;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .project-image {
+            max-width: 50%;
+            height: auto;
+        }
+        .project-explanation.head{
+            text-align: center;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="project-explanation">
+        <h1><span class="head"></span>Project</h1>
+        <img src="projpic.png" class="project-image" alt="Project Image">
+        <h1>EFFICIENT IMPLEMENTATION OF LOOK UP TABLE BASED NUMERICALLY CONTROLLED OSCILLATOR</h1>
+        <p>The implementation of a Numerically Controlled Oscillator (NCO) using a Look-Up Table (LUT) and an Arduino microcontroller is presented in this study. NCOs are widely used in various digital signal processing applications, including frequency synthesis, waveform generation, and phase modulation. The proposed approach utilizes a precomputed LUT to store discrete values representing the desired waveform. By accessing the LUT with precise timing controlled by the Arduino, the NCO generates high-quality waveforms with reduced computational complexity.
+
+        The implementation process begins by designing the LUT, which contains a sequence of digital samples representing the desired waveform. The choice of waveform, such as sine, square, or triangle, depends on the application requirements. The LUT is stored in the Arduino's memory, ensuring fast and efficient access. To generate the desired waveform, the Arduino acts as a controller and uses a phase accumulator, which increments at a specified frequency. The phase accumulator value is used as an index to access the LUT, retrieving the corresponding sample value. By iteratively increasing the phase accumulator and accessing the LUT, a continuous waveform is synthesized.
+        </p>
+    </div>
+</body>
+</html>
+
+
+
